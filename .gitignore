@@ -17,3 +17,4 @@ data
 .vscode
 artifacts
 output
+battery-report*.html
