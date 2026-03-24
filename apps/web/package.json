@@ -1,0 +1,52 @@
+{
+  "name": "@neoshell/web",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bunx vite build",
+    "lint": "eslint .",
+    "preview": "bunx vite preview --host 0.0.0.0 --port 3000",
+    "dev": "bunx vite --host 0.0.0.0 --port 3000",
+    "test": "bunx vitest run",
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@neoshell/shared": "workspace:*",
+    "@radix-ui/react-alert-dialog": "^1.1.15",
+    "@radix-ui/react-avatar": "^1.1.10",
+    "@radix-ui/react-dialog": "^1.1.15",
+    "@radix-ui/react-label": "^2.1.8",
+    "@radix-ui/react-scroll-area": "^1.2.10",
+    "@radix-ui/react-select": "^2.2.6",
+    "@radix-ui/react-separator": "^1.1.7",
+    "@radix-ui/react-slot": "^1.2.3",
+    "@radix-ui/react-tabs": "^1.1.13",
+    "@tanstack/react-query": "^5.87.4",
+    "@vitejs/plugin-react": "^4.6.0",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.544.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "sonner": "^2.0.7",
+    "tailwind-merge": "^3.3.1",
+    "vite": "^7.1.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@testing-library/jest-dom": "^6.8.0",
+    "@testing-library/react": "^16.3.0",
+    "@testing-library/user-event": "^14.6.1",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "@typescript-eslint/eslint-plugin": "^8.57.2",
+    "@typescript-eslint/parser": "^8.57.2",
+    "autoprefixer": "10.4.21",
+    "globals": "^17.4.0",
+    "happy-dom": "^16.8.1",
+    "postcss": "8.5.6",
+    "tailwindcss": "3.4.17",
+    "tailwindcss-animate": "^1.0.7"
+  }
+}

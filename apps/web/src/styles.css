@@ -1,0 +1,95 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --background: 36 36% 97%;
+  --foreground: 24 20% 12%;
+  --card: 0 0% 100%;
+  --card-foreground: 24 20% 12%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 24 20% 12%;
+  --primary: 21 58% 42%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 32 22% 92%;
+  --secondary-foreground: 24 16% 18%;
+  --muted: 34 18% 94%;
+  --muted-foreground: 24 10% 45%;
+  --accent: 31 84% 89%;
+  --accent-foreground: 22 56% 22%;
+  --destructive: 8 65% 42%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 27 22% 84%;
+  --input: 27 22% 84%;
+  --ring: 21 58% 42%;
+  --radius: 1rem;
+}
+
+.dark {
+  --background: 222 20% 10%;
+  --foreground: 210 40% 98%;
+  --card: 222 20% 12%;
+  --card-foreground: 210 40% 98%;
+  --popover: 222 20% 12%;
+  --popover-foreground: 210 40% 98%;
+  --primary: 24 72% 56%;
+  --primary-foreground: 222 20% 10%;
+  --secondary: 217 19% 18%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 217 19% 18%;
+  --muted-foreground: 215 16% 65%;
+  --accent: 217 19% 18%;
+  --accent-foreground: 210 40% 98%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 210 40% 98%;
+  --border: 217 19% 22%;
+  --input: 217 19% 22%;
+  --ring: 24 72% 56%;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Aptos", "Segoe UI", system-ui, sans-serif;
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+::selection {
+  background: hsl(var(--primary) / 0.18);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}

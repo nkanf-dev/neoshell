@@ -1,0 +1,15 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react-jsx",
+    "paths": {
+      "@/*": ["./src/*"],
+      "@neoshell/shared": ["../../packages/shared/src/index.ts"],
+      "@neoshell/shared/*": ["../../packages/shared/src/*"]
+    },
+    "types": ["vite/client"]
+  },
+  "include": ["src/**/*.ts", "src/**/*.tsx", "test/**/*.ts", "test/**/*.tsx", "vite.config.ts", "tailwind.config.ts"],
+  "exclude": ["node_modules", "dist"]
+}

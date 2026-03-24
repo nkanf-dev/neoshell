@@ -1,0 +1,24 @@
+{
+  "name": "@neoshell/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "bunx tsc -p tsconfig.json",
+    "dev": "tsx watch src/main.ts",
+    "lint": "bunx eslint \"src/**/*.{ts,tsx}\" \"test/**/*.ts\"",
+    "test": "bunx vitest run --config vitest.config.ts",
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "@neoshell/shared": "workspace:*",
+    "@fastify/cookie": "^11.0.2",
+    "@fastify/cors": "^11.1.0",
+    "@fastify/helmet": "^13.0.1",
+    "@fastify/rate-limit": "^10.3.0",
+    "dotenv": "^17.2.2",
+    "fastify": "^5.6.0",
+    "nanoid": "^5.1.6",
+    "zod": "^4.1.11"
+  }
+}

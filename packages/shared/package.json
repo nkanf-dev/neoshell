@@ -1,0 +1,20 @@
+{
+  "name": "@neoshell/shared",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "scripts": {
+    "build": "bunx tsc -p tsconfig.json",
+    "lint": "bunx eslint \"src/**/*.ts\"",
+    "test": "bunx vitest run --passWithNoTests",
+    "typecheck": "bunx tsc -p tsconfig.json --noEmit"
+  },
+  "dependencies": {
+    "zod": "^4.1.11"
+  }
+}
