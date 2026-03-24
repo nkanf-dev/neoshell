@@ -6,6 +6,8 @@ Browser-first PowerShell agent control plane.
 
 `neoshell` gives you a remote, authenticated browser surface for a PowerShell-first coding agent. You can talk to the agent, review its plan, watch streaming output, inspect every shell command, and switch into a direct terminal mode without leaving the control plane.
 
+![neoshell control plane](docs/images/neoshell-product.png)
+
 ## What It Does
 
 - Plan-aware agent runs with streaming status, plan updates, command events, and final answers.
